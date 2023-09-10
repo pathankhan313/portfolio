@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+button{
+    outline: none;
+}
+
+:root{
+    --primary-color:rgb(28, 28, 28);
+    --secondary-color:white;
+    --btn-color:cyan;
+    --typewriterSpeed:3s;
+    
+}
+
+.dark{
+    --btn-color: black;
+    --primary-color:white;
+    --secondary-color:rgb(28, 28, 28);
+}
+
+body{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem ;
+    padding-left: 1.5rem;
+    background-color: rgb(28, 28, 28);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#toggle-btn{
+    padding: .5rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.header nav .nav-links{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.header nav .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+#home{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1600px;
+    margin: auto;
+}
+
+#myportfolio{
+    position: relative;
+}
+
+#myportfolio::before,
+#myportfolio::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    animation: typewriter var(--typewriterSpeed) ease-in-out 1s alternate infinite;
+}
+
+#myportfolio::after{
+    height: 100%;
+    width: 3px;
+    background-color: rgb(204, 41, 254);
+}
+
+@keyframes typewriter {
+    to{
+        left: 100%;
+    }
+}
+
+#resume{
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    border: 2px solid var(--primary-color);
+    background: transparent;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition:all .5s ;
+    transition-delay: 300ms;
+}
+
+#resume:hover{
+    color: var(--btn-color);
+}
+
+#resume::before{
+    content: '';
+    transition:all .5s ;
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 0%;
+    transition-delay: 100ms;
+    z-index: -1;
+}
+
+#resume:hover::before{
+    width: 100%;
+    background: var(--primary-color);
+}
+
+.home-left p{
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.home-right{
+    background-color: aqua;
+    border-radius: 90% 10% 90% 10% / 89% 10% 90% 11% ;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.home-right img,
+.about-right img{
+    width: 25rem;
+}
+
+#about{
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1600px;
+    margin: auto;
+}
+
+.about-left h1{
+    font-size: 3rem;
+}
+
+.about-right{
+    margin-left: 1rem;
+}
+
+.about-left p{
+    font-size: 1.3rem;
+}
+
+.about-left p a{
+    color: var(--primary-color);
+}
+
+.social-links{
+    margin-top: 1rem;
+}
+
+.about-left .social-links a {
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+#twitter{
+    fill: var(--primary-color);
+}
+
+#facebook{
+    fill: #1196f5;
+}
+
+#projects{
+    height: 90vh;
+    margin-top: 2rem;
+}
+
+.projects-top{
+    text-align: center;
+}
+
+.up-down-arrow{
+    rotate: 90deg;
+    margin-left: 1rem;
+    fill: var(--primary-color);
+}
+
+.projects-bottom{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1600px;
+    gap: 1rem;
+    margin: auto;
+}
+
+.projects-bottom .my-projects{
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-bottom .my-projects img{
+    width: 350px;
+    height: 350px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin-top: 3rem;
+}
+
+.projects-bottom .my-projects div{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.projects-bottom .my-projects a{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.15rem;
+}
