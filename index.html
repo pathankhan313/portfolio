@@ -18,7 +18,14 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <button id="toggle-btn">Dark</button>
+        <div class="header-right">
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <button id="toggle-btn">Dark</button>
+        </div>
     </header>
 
     <div id="home">
@@ -32,7 +39,7 @@
             <img src="Businessman_with_laptop.png" alt="">
         </div>
     </div>
-    <hr>
+    <!-- <hr> -->
 
     <!-- About Section -->
     <div id="about">
@@ -60,7 +67,7 @@
             <img src="Businessman_with_laptop.png" alt="">
         </div>
     </div>
-    <hr>
+    <!-- <hr> -->
     <!-- Projects Section -->
     <div id="projects">
         <div class="projects-top">
@@ -97,23 +104,27 @@
 
         </div>
     </div>
+    <!-- <hr> -->
 
-    <script>
-        let btn = document.getElementById('toggle-btn');
-        let resume = document.getElementById('resume');
-        btn.addEventListener('click',()=>{
-            document.body.classList.toggle('dark')
-            if (document.body.classList.contains('dark')) {
-                btn.innerHTML='Light'
-            } else {
-                btn.innerHTML='Dark'
-                
-            }
-        })
-
-        resume.addEventListener('click',()=>{
-            window.open('Resume.pdf','_blank');
-        })
-    </script>
+    <div id="contact">
+        <div class="contact-top">
+            <h1>Reach Out to Me</h1>
+        </div>
+        <div class="contact-bottom">
+            <div class="contact-info">
+                <h2>Address</h2>
+                <p>Near Awasthi Square, Jafar Nagar</p>
+            </div>
+            <div class="contact-info">
+                <h2>Email</h2>
+                <p>ktanzeel968@gmail.com</p>
+            </div>
+            <div class="contact-info">
+                <h2>Phone</h2>
+                <p>+918624830265</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
