@@ -42,13 +42,14 @@ btn.addEventListener('click',()=>{
     }
 })
 
-    // Function to set dark mode based on user preference
-    function setDarkModePreference() {
-      const isDarkMode = localStorage.getItem('darkMode') === 'true';
-      if (isDarkMode) {
+// Function to set dark mode based on user preference
+function setDarkModePreference() {
+    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+    if (isDarkMode) {
         document.body.classList.add('dark');
-      }
+        btn.innerHTML = 'Light'
     }
+}
 
     // Call the setDarkModePreference function on page load
     setDarkModePreference();

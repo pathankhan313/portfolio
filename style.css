@@ -24,7 +24,7 @@ button{
 .dark{
     --btn-color: black;
     --primary-color:white;
-    --secondary-color:rgb(28, 28, 28);
+    --secondary-color:rgb(34, 34, 34);
 }
 
 body{
@@ -38,7 +38,8 @@ body{
     align-items: center;
     padding: 1rem ;
     padding-left: 1.5rem;
-    background-color: rgb(28, 28, 28);
+    background-color: rgba(28, 28, 28,.7);
+    backdrop-filter: blur(5px);
     color: white;
     position: sticky;
     top: 0;
@@ -299,6 +300,12 @@ body{
 
 /* Media queries */
 
+@media screen and (max-width: 1080px) {
+    #projects{
+      height: 100%;
+    }
+}
+
 @media screen and (max-width: 850px) {
   #home{
     flex-direction: column;
@@ -311,9 +318,6 @@ body{
 }
 
 @media screen and (max-width: 750px) {
-  #projects{
-    height: 100%;
-  }
   .contact-bottom{
     justify-content: center;
     flex-direction: column;
