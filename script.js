@@ -1,6 +1,7 @@
 let btn = document.getElementById('toggle-btn');
 let resume = document.getElementById('resume');
 
+// Open the resume
 resume.addEventListener('click', () => {
     window.open('Resume.pdf', '_blank');
 })
@@ -35,11 +36,6 @@ btn.addEventListener('click',()=>{
     document.body.classList.toggle('dark')
     const isDarkMode = document.body.classList.contains('dark');
     localStorage.setItem('darkMode', isDarkMode);
-    if (document.body.classList.contains('dark')) {
-        btn.innerHTML = 'Light'
-    } else {
-        btn.innerHTML = 'Dark'
-    }
 })
 
 // Function to set dark mode based on user preference
@@ -47,7 +43,6 @@ function setDarkModePreference() {
     const isDarkMode = localStorage.getItem('darkMode') === 'true';
     if (isDarkMode) {
         document.body.classList.add('dark');
-        btn.innerHTML = 'Light'
     }
 }
 

@@ -37,7 +37,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem ;
+    /* padding: 1rem ; */
     padding-left: 1.5rem;
     background-color: rgba(28, 28, 28,.7);
     backdrop-filter: blur(5px);
@@ -77,8 +77,14 @@ body{
     cursor: pointer;
     background: transparent;
     color: white;
-    border: 2px solid;
+    border: none;
     border-radius: 10px;
+}
+
+#toggle-btn svg{
+    height: 2.5rem;
+    margin: 0 .5rem;
+    fill: var(--primary-color);
 }
 
  .nav-links{
@@ -340,7 +346,8 @@ body{
     display: flex;
     position: absolute;
     flex-direction: column;
-    background: rgb(28, 28, 28);
+    background: rgba(28, 28, 28,.7);
+    backdrop-filter: blur(5px);
     width: 100%;
     top: 4rem;
     left: 0rem;
@@ -382,6 +389,12 @@ body{
     .contact-bottom{
         height: 50%;
     }
+}
+
+@media screen and (max-width: 350px) {
+  .about-right img{
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1600px) {
