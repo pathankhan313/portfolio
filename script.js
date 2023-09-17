@@ -14,8 +14,8 @@ const navLinks = document.querySelector('.nav-links');
 // Toggle the navigation menu when the hamburger menu is clicked
 hamburger.addEventListener('click', (e) => {
     // navLinks.classList.toggle('active')
-    if (navLinks.style.height != '16rem') {
-        navLinks.style.height = '16rem'
+    if (navLinks.style.height != '17rem') {
+        navLinks.style.height = '17rem'
     } else {
         navLinks.style.height = '0rem'
     }
@@ -23,17 +23,13 @@ hamburger.addEventListener('click', (e) => {
 })
 
 // Close the navigation menu when the link is clicked
-let navigationLinks = document.querySelectorAll('ul li ');
+let navigationLinks = document.querySelectorAll('nav ul li ');
 
 navigationLinks.forEach(function (link) {
     link.addEventListener('click', function () {
         navLinks.style.height = '0rem'
+        navLinks.style.alignItems = 'center'
     });
-});
-
-// Close the navigation menu when the document is clicked
-document.addEventListener('click',  ()=> {
-    navLinks.style.height = '0rem'
 });
 
 // Dark Mode Toggle

@@ -35,7 +35,7 @@
     <div id="home">
         <div class="home-left">
             <p>Welcome to </p>
-            <p id="myportfolio">my Portfolio</p>
+            <p id="myportfolio"></p>
             <button id="resume">Resume</button>
         </div> 
 
@@ -130,5 +130,13 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#myportfolio', {
+          strings: ['My Portfolio'],
+          typeSpeed: 100,
+          showCursor:false,
+        });
+      </script>
 </body>
 </html>
