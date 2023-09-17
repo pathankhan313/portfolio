@@ -13,7 +13,12 @@ const navLinks = document.querySelector('.nav-links');
 
 // Toggle the navigation menu when the hamburger menu is clicked
 hamburger.addEventListener('click', (e) => {
-    navLinks.classList.toggle('active')
+    // navLinks.classList.toggle('active')
+    if (navLinks.style.height != '16rem') {
+        navLinks.style.height = '16rem'
+    } else {
+        navLinks.style.height = '0rem'
+    }
     e.stopPropagation();
 })
 
@@ -22,13 +27,13 @@ let navigationLinks = document.querySelectorAll('ul li ');
 
 navigationLinks.forEach(function (link) {
     link.addEventListener('click', function () {
-        navLinks.classList.remove('active')
+        navLinks.style.height = '0rem'
     });
 });
 
 // Close the navigation menu when the document is clicked
 document.addEventListener('click',  ()=> {
-    navLinks.classList.remove('active')
+    navLinks.style.height = '0rem'
 });
 
 // Dark Mode Toggle

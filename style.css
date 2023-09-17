@@ -60,6 +60,7 @@ body {
     border: 2px solid;
     padding: 3px;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 .header .header-right .hamburger .line {
@@ -346,20 +347,21 @@ body {
 
 @media screen and (max-width: 600px) {
     .nav-links {
-        display: none;
-    }
-
-    .nav-links.active {
+        transition: all .5s;
+        height: 0rem;
+        opacity: 1;
         display: flex;
         position: absolute;
         flex-direction: column;
         background: rgba(28, 28, 28, .7);
-        backdrop-filter: blur(5px);
         width: 100%;
-        top: 4rem;
+        top: 3.8rem;
+        overflow: hidden;
         left: 0rem;
         z-index: -1;
-        padding: 1rem 0;
+    }
+    .header nav ul li{
+        padding: .7rem 0;
     }
 
     .nav-links li {
