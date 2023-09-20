@@ -34,9 +34,16 @@
 
     <div id="home">
         <div class="home-left">
-            <p>Welcome to </p>
-            <p id="myportfolio"></p>
-            <button id="resume">Resume</button>
+            <div>
+                <span>Welcome to </span>
+                <span id="myportfolio"></span>
+            </div>
+            <div class="intro">
+                I'm a <span id="myintro"></span>
+            </div>
+            <div>
+                <button id="resume">Resume</button>
+            </div>
         </div> 
 
         <div class="home-right">
@@ -134,8 +141,15 @@
     <script>
         var typed = new Typed('#myportfolio', {
           strings: ['My Portfolio'],
-          typeSpeed: 100,
+          typeSpeed: 50,
           showCursor:false,
+        });
+
+        var typed = new Typed('#myintro', {
+          strings: ['Web Developer^1000','UI Designer','PHP Developer'],
+          typeSpeed: 50,
+          backSpeed: 50,
+          loop:true
         });
       </script>
 </body>
