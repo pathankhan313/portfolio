@@ -46,6 +46,5 @@ function setDarkModePreference() {
         document.body.classList.add('dark');
     }
 }
-
     // Call the setDarkModePreference function on page load
     setDarkModePreference();

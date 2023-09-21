@@ -34,7 +34,7 @@
 
     <div id="home">
         <div class="home-left">
-            <div>
+            <div class="greet">
                 <span>Welcome to </span>
                 <span id="myportfolio"></span>
             </div>
@@ -139,14 +139,14 @@
     <script src="script.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
-        var typed = new Typed('#myportfolio', {
+        let typed = new Typed('#myportfolio', {
           strings: ['My Portfolio'],
           typeSpeed: 50,
           showCursor:false,
         });
 
-        var typed = new Typed('#myintro', {
-          strings: ['Web Developer^1000','UI Designer','PHP Developer'],
+        let typed1 = new Typed('#myintro', {
+          strings: ['Web Developer^500','UI Designer','PHP Developer'],
           typeSpeed: 50,
           backSpeed: 50,
           loop:true

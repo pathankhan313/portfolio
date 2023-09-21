@@ -20,7 +20,6 @@ button {
     --primary-color: rgb(28, 28, 28);
     --secondary-color: white;
     --btn-color: cyan;
-    --typewriterSpeed: 3s;
 }
 
 .dark {
@@ -157,7 +156,7 @@ body {
     flex-direction: column;
 }
 
-.home-left span {
+.home-left .greet span {
     font-size: 3rem;
     font-weight: 700;
     letter-spacing: 3px;
@@ -388,7 +387,7 @@ body {
 }
 
 @media screen and (max-width: 470px) {
-    .home-left span {
+    .home-left .greet span {
         font-size: 3rem;
     }
 
@@ -416,7 +415,8 @@ body {
         display: none;
     }
 
-    .home-left span{
+    .home-left .greet span,
+    .home-left .intro{
         font-size: 2.5rem;
         line-height: 3.5rem;
     }
