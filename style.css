@@ -151,7 +151,7 @@ body {
     background: var(--primary-color);
 }
 
-.home-left{
+.home-left {
     display: flex;
     flex-direction: column;
 }
@@ -163,7 +163,7 @@ body {
     line-height: 4rem;
 }
 
-.home-left .intro{
+.home-left .intro {
     font-size: 2.5rem;
     font-weight: 700;
     letter-spacing: 1px;
@@ -171,7 +171,7 @@ body {
 }
 
 #myintro,
-#myportfolio{
+#myportfolio {
     color: rgb(196, 17, 196);
 }
 
@@ -247,16 +247,20 @@ body {
     fill: var(--primary-color);
 }
 
-.projects-bottom {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 1rem;
+.swiper {
+    max-width: 1250px;
 }
 
-.projects-bottom .my-projects {
+.swiper-button-next,
+.swiper-button-prev {
+    outline: none;
+}
+
+.projects-bottom>.my-projects {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .projects-bottom .my-projects img {
@@ -270,6 +274,7 @@ body {
 .projects-bottom .my-projects div {
     display: flex;
     align-items: center;
+    translate: -6rem 0;
     gap: .5rem;
     padding: .7rem .5rem;
 }
@@ -313,11 +318,11 @@ body {
 
 }
 
-@media screen and (max-width: 1080px) {
+/* @media screen and (max-width: 1080px) {
     #projects {
         height: 100%;
     }
-}
+} */
 
 @media screen and (max-width: 850px) {
 
@@ -354,7 +359,8 @@ body {
         left: 0rem;
         z-index: -1;
     }
-    .header nav ul li{
+
+    .header nav ul li {
         padding: .7rem 0;
     }
 
@@ -392,7 +398,7 @@ body {
         line-height: 3rem;
     }
 
-    .home-left .intro{
+    .home-left .intro {
         font-size: 2rem;
         line-height: 3rem;
     }
@@ -414,6 +420,9 @@ body {
     .contact-bottom {
         height: 50%;
     }
+    .projects-bottom .my-projects div{
+        translate: -4rem 0;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -421,13 +430,13 @@ body {
         display: none;
     }
 
-    .home-left .greet span{
+    .home-left .greet span {
         font-size: 2.5rem;
         line-height: 3.5rem;
     }
-    
 
-    #resume{
+
+    #resume {
         font-size: 1rem;
     }
 }

@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hi, My Name is Tanzeel Khan and I'm a passionate web developer. My main focus is to build responsive website for best user experience">
+    <meta name="description"
+        content="Hi, My Name is Tanzeel Khan and I'm a passionate web developer. My main focus is to build responsive website for best user experience">
     <title>Tanzeel's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
+
 <body>
     <!-- Header Section -->
     <header class="header">
@@ -28,7 +32,9 @@
             </div>
             <button id="toggle-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
-                    <path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></svg>
+                    <path
+                        d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z" />
+                </svg>
             </button>
         </div>
     </header>
@@ -45,7 +51,7 @@
             <div>
                 <button id="resume">Resume</button>
             </div>
-        </div> 
+        </div>
 
         <div class="home-right">
             <img src="Businessman_with_laptop.png" alt="">
@@ -57,22 +63,31 @@
     <div id="about">
         <div class="about-left">
             <h1>About Me</h1>
-            <p>Hi there! My name is Tanzeel Khan and I’m a web developer. I have a passion for creating beautiful, intuitive, and functional websites that provide an enjoyable user experience.
+            <p>Hi there! My name is Tanzeel Khan and I’m a web developer. I have a passion for creating beautiful,
+                intuitive, and functional websites that provide an enjoyable user experience.
 
-                I have developed a strong skill set that includes proficiency in HTML, CSS , and JS and MySql Database. I have worked on a variety of projects.
-                
-                In my free time, I enjoy to do playing football and video games. I am always eager to learn and grow, both personally and professionally. If you’re interested in working with me or just want to say hi, feel free to 
-                <a href="#contact" > contact me.</a></p>
-                <div class="social-links">
-                    <a href="https://twitter.com/Tanzeel30006997" target="_blank" >
-                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" id="twitter">
-                            <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
-                    </a>
+                I have developed a strong skill set that includes proficiency in HTML, CSS , and JS and MySql Database.
+                I have worked on a variety of projects.
+
+                In my free time, I enjoy to do playing football and video games. I am always eager to learn and grow,
+                both personally and professionally. If you’re interested in working with me or just want to say hi, feel
+                free to
+                <a href="#contact"> contact me.</a>
+            </p>
+            <div class="social-links">
+                <a href="https://twitter.com/Tanzeel30006997" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" id="twitter">
+                        <path
+                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                    </svg>
+                </a>
                 <a href="https://www.facebook.com/profile.php?id=100057002341467" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" id="facebook">
-                        <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                        <path
+                            d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                    </svg>
                 </a>
-                </div>
+            </div>
         </div>
 
         <div class="about-right">
@@ -80,40 +95,58 @@
         </div>
     </div>
     <!-- <hr> -->
+
     <!-- Projects Section -->
+
     <div id="projects">
         <div class="projects-top">
             <h1>My Projects</h1>
         </div>
-
-        <div class="projects-bottom">
-            <div class="my-projects">
-                <img src="Projects/gym.png" alt="">
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" class="up-down-arrow">
-                        <path d="M32 448c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0c53 0 96-43 96-96l0-306.7 73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 109.3 160 416c0 17.7-14.3 32-32 32l-96 0z"/></svg>
+        <div class="swiper" id="swipers">
+            <div class="projects-bottom swiper-wrapper">
+                <div class="my-projects swiper-slide">
+                    <img src="Projects/gym.png" alt="">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"
+                            class="up-down-arrow">
+                            <path
+                                d="M32 448c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0c53 0 96-43 96-96l0-306.7 73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 109.3 160 416c0 17.7-14.3 32-32 32l-96 0z" />
+                        </svg>
                         <a href="https://trainerstudio.netlify.app/" target="_blank">Gym Website</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="my-projects">
-                <img src="Projects/cwhclone.png" alt="">
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" class="up-down-arrow">
-                        <path d="M32 448c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0c53 0 96-43 96-96l0-306.7 73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 109.3 160 416c0 17.7-14.3 32-32 32l-96 0z"/></svg>
+                <div class="my-projects swiper-slide">
+                    <img src="Projects/cwhclone.png" alt="">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"
+                            class="up-down-arrow">
+                            <path
+                                d="M32 448c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0c53 0 96-43 96-96l0-306.7 73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 109.3 160 416c0 17.7-14.3 32-32 32l-96 0z" />
+                        </svg>
                         <a href="https://pathankhan313.github.io/cwhclone/" target="_blank">CWH Clone</a>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="my-projects">
-                <img src="Projects/portfolio.png" alt="">
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" class="up-down-arrow">
-                        <path d="M32 448c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0c53 0 96-43 96-96l0-306.7 73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 109.3 160 416c0 17.7-14.3 32-32 32l-96 0z"/></svg>
-                        <a href="https://tanzeelportfolio.netlify.app/" target="_blank">Portfolio Website</a>
-                </div>
-            </div>
 
+                <div class="my-projects swiper-slide">
+                    <img src="Projects/portfolio.png" alt="">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"
+                            class="up-down-arrow">
+                            <path
+                                d="M32 448c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0c53 0 96-43 96-96l0-306.7 73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 109.3 160 416c0 17.7-14.3 32-32 32l-96 0z" />
+                        </svg>
+                        <a href="https://tanzeelportfolio.netlify.app/" target="_blank">Portfolio Website</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </div>
     <!-- <hr> -->
@@ -133,7 +166,7 @@
             </div>
             <div class="contact-info">
                 <h2>Phone</h2>
-                <p>+918624830265</p>
+                <p>+918624830264</p>
             </div>
         </div>
     </div>
@@ -141,17 +174,66 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         let typed = new Typed('#myportfolio', {
-          strings: ['My Portfolio'],
-          typeSpeed: 50,
-          showCursor:false,
+            strings: ['My Portfolio'],
+            typeSpeed: 50,
+            showCursor: false,
         });
 
         let typed1 = new Typed('#myintro', {
-          strings: ['Web Developer^500','UI Designer','PHP Developer','Programmer'],
-          typeSpeed: 50,
-          backSpeed: 50,
-          loop:true
+            strings: ['Web Developer^500', 'UI Designer', 'PHP Developer', 'Programmer'],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
         });
-      </script>
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('#swipers', {
+            // Optional parameters
+            speed: 500,
+            direction: 'horizontal',
+            loop: true,
+            
+            
+            // If we need pagination
+            pagination: {
+                dynamicBullets: true,
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            keyboard: {
+                enabled: true,
+                onlyInViewport: false,
+            },
+
+            breakpoints: {
+                // when window width is >= 320px
+                420: {
+                    slidesPerView: 1,
+                    spaceBetween: 50
+                },
+                // when window width is >= 640px
+                740: {
+                    slidesPerView: 2,
+                    spaceBetween: 70
+                },
+                // when window width is >= 1040px
+                1100: {
+                    slidesPerView: 3,
+                    spaceBetween: 100   
+                }
+            }
+        });
+
+    </script>
 </body>
+
 </html>
