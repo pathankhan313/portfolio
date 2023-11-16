@@ -48,3 +48,63 @@ function setDarkModePreference() {
 }
     // Call the setDarkModePreference function on page load
     setDarkModePreference();
+
+    // Swiper Js
+    const swiper = new Swiper('#swipers', {
+        // Optional parameters
+        speed: 500,
+        direction: 'horizontal',
+        loop: false,
+        grabCursor: true,
+        
+        // If we need pagination
+        pagination: {
+            dynamicBullets: true,
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        keyboard: {
+            enabled: true,
+            onlyInViewport: false,
+        },
+
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 50,
+                loop:true,
+            },
+            // when window width is >= 640px
+            740: {
+                slidesPerView: 2,
+                spaceBetween: 70
+            },
+            // when window width is >= 1040px
+            1100: {
+                slidesPerView: 3,
+                spaceBetween: 100   
+            }
+        }
+    });
+
+    // Typed Js
+    let typed = new Typed('#myportfolio', {
+        strings: ['My Portfolio'],
+        typeSpeed: 50,
+        showCursor: false,
+    });
+
+    let typed1 = new Typed('#myintro', {
+        strings: ['Web Developer^500', 'UI Designer', 'PHP Developer', 'Programmer'],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true
+    });
