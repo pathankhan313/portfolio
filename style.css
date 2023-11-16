@@ -247,13 +247,14 @@ body {
     fill: var(--primary-color);
 }
 
-.swiper {
-    max-width: 1250px;
-}
-
 .swiper-button-next,
 .swiper-button-prev {
     outline: none;
+    fill: var(--primary-color);
+}
+
+.swiper-button-next{
+    right: 15px;
 }
 
 .projects-bottom>.my-projects {
@@ -310,12 +311,17 @@ body {
 
 /* Media queries */
 
+@media screen and (min-width: 1600px) {
+    .swiper {
+        max-width: 1600px;
+    }
+}
+
 @media screen and (max-width: 1130px) {
     #home {
         flex-direction: column;
         justify-content: center;
     }
-
 }
 
 /* @media screen and (max-width: 1080px) {
