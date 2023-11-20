@@ -82,15 +82,15 @@ function setDarkModePreference() {
                 spaceBetween: 50,
                 loop:true,
             },
-            // when window width is >= 640px
+            // when window width is >= 740px
             740: {
                 slidesPerView: 2,
                 spaceBetween: 70
             },
             // when window width is >= 1040px
-            1100: {
+            1200: {
                 slidesPerView: 3,
-                spaceBetween: 100   
+                spaceBetween: 10   
             }
         }
     });

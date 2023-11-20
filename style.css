@@ -247,10 +247,13 @@ body {
     fill: var(--primary-color);
 }
 
+.swiper{
+    max-width: 1300px;
+}
+
 .swiper-button-next,
 .swiper-button-prev {
     outline: none;
-    fill: var(--primary-color);
 }
 
 .swiper-button-next{
